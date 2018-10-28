@@ -1,0 +1,3189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="InputScreensDlg">
+		<centered>1</centered>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_DIALOG_STYLE|wxMINIMIZE_BOX</style>
+		<object class="wxBoxSizer" variable="BoxSizerMain" member="yes">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizerControlsMain" member="yes">
+					<object class="sizeritem">
+						<object class="wxNotebook" name="ID_NOTEBOOK1" variable="NotebookInputScreen_1" member="yes">
+							<size>1500,800</size>
+							<handler function="OnNotebookInputScreen_1PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL1" variable="pnlInputScreen_1" member="yes">
+									<object class="wxBoxSizer" variable="BoxSizerInputScreen_1" member="no">
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerControls1" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerDiaTank" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT1" variable="lblDiaTank" member="yes">
+																<label>Diameter of Tank  (M) *</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="txtDiaTank" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtDiaTank-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+																<handler function="OntxtDiaTankText" entry="EVT_TEXT" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerChoiceDiaType" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT2" variable="lblDiaType" member="yes">
+																<label>ID / Nominal DIA?</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE1" variable="cmbChoiceDiaType" member="yes">
+																<content>
+																	<item>ID</item>
+																	<item>NOMINAL DIAMETER</item>
+																</content>
+																<selection>0</selection>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>cmbChoiceDiaType-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+																<handler function="OncmbChoiceDiaTypeSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_TOP</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerTankHeight" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT3" variable="lblHTankHeight" member="yes">
+																<label>Height of Tank (M)*</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="txtTankHeight" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerDesignPrdLvl" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT4" variable="lblDesignPrdLvl" member="yes">
+																<label>Design Product level (M)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="txtDesignPrdLvl" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtDesignPrdLvl-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerTestWaterLvl" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT5" variable="lblTestWaterLvl" member="yes">
+																<label>Test water level (M)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="txtTestWaterLvl" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtTestWaterLvl-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerNormalLiqdLvl" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT6" variable="lblNormalLiqdLvl" member="yes">
+																<label>Normal liquid level (M)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL6" variable="txtNormalLiqdLvl" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtNormalLiqdLvl-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerLiqdLvlSesDesign" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT7" variable="lblLiqdLvlSesDesign" member="yes">
+																<label>Liquid level for seismic design (M)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="txtLiqdLvlSesDesign" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtLiqdLvlSesDesign-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSpecificGrvtyStrdPrd" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT8" variable="lblSpecificGrvtyStrdPrd" member="yes">
+																<label>Specific gravity of stored product*</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="txtSpecificGrvtyStrdPrd" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtSpecificGrvtyStrdPrd-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSpecificGrvtyHydroTest" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT9" variable="lblSpecificGrvtyHydroTest" member="yes">
+																<label>Specific gravity of water used for hydro test.</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL9" variable="txtSpecificGrvtyHydroTest" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtSpecificGrvtyHydroTest-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxFIXED_MINSIZE</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerDesignTemp" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT10" variable="lblDesignTemp" member="yes">
+																<label>Design Temperature (Deg.C)*</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL10" variable="txtDesignTemp" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtDesignTemp-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerMinDesignMetalTemp" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT11" variable="lblMinDesignMetalTemp" member="yes">
+																<label>Minimum design metal temperature (Deg.C)*</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL11" variable="txtMinDesignMetalTemp" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtMinDesignMetalTemp-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerDesignInternalPressure" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT12" variable="lblDesignInternalPressure" member="yes">
+																<label>Design internal pressure (kPa)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL12" variable="txtDesignInternalPressure" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtDesignInternalPressure-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerPressureCmbFact" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT13" variable="lblPressureCmbFact" member="yes">
+																<label>Pressure combination Factor (Fp)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL13" variable="txtPressureCmbFact" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtPressureCmbFact-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_RIGHT</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerControls2" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerChoiceAddDesignLqdHead" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT14" variable="lblAddDesignLqdHead" member="yes">
+																<label>Add (P/9.8G) to design liquid head?</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE2" variable="cmbChoiceAddDesignLqdHead" member="yes">
+																<content>
+																	<item>NO</item>
+																	<item>YES</item>
+																</content>
+																<enabled>0</enabled>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<handler function="OncmbChoiceAddDesignLqdHeadSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerDesignExtPressure" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT15" variable="lblDesignExtPressure" member="yes">
+																<label>Design external pressure (kPa)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL15" variable="txtDesignExtPressure" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtDesignExtPressure-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerExtPressureCmbFactor" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT16" variable="lblExtPressureCmbFactor" member="yes">
+																<label>External Pressure combination Factor</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL16" variable="txtExtPressureCmbFactor" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtExtPressureCmbFactor-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerChoiceAppendixShellDesign" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT17" variable="lblAppendixShellDesign" member="yes">
+																<label>Applicable Appendix for shell design: </label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE3" variable="cmbChoiceAppendixShellDesign" member="yes">
+																<content>
+																	<item>Appendix-A</item>
+																	<item>Appendix-J</item>
+																	<item>Appendix-S</item>
+																	<item>Appendix-SC</item>
+																	<item>Appendix-X</item>
+																	<item>None</item>
+																</content>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<handler function="OncmbChoiceAppendixShellDesignSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerCourseWidthFirstShellBtm" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT18" variable="lblCourseWidthFirstShellBtm" member="yes">
+																<label>Course Width for First Shell Course from bottom (M)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL18" variable="txtCourseWidthFirstShellBtm" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtCourseWidthFirstShellBtm-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerCorrosionAllowanceFirstShllBtm" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT19" variable="lblCorrosionAllowanceFirstShllBtm" member="yes">
+																<label>Corrosion Allowance of First Shell Course from bottom (mm)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL19" variable="txtCorrosionAllowanceFirstShllBtm" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtCorrosionAllowanceFirstShllBtm-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerJointEffcncyShellVertSeams" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT20" variable="lblJointEffcncyShellVertSeams" member="yes">
+																<label>Joint Efficiency for shell vertical seams </label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE21" variable="cmbJointEffcncyShellVertSeams" member="yes">
+																<content>
+																	<item>0.7</item>
+																	<item>0.85</item>
+																	<item>1.0</item>
+																</content>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<handler function="OncmbJointEffcncyShellVertSeamsSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerChoiceMethodShellThickCalc" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT21" variable="lblMethodShellThickCalc" member="yes">
+																<label>Method for Shell Thickness Calculation</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE4" variable="cmbChoiceMethodShellThickCalc" member="yes">
+																<content>
+																	<item>One Foot</item>
+																	<item>Variable Design Point</item>
+																</content>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<handler function="OncmbChoiceMethodShellThickCalcSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerCorrosionAllowanceBtmPlate" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT22" variable="lblCorrosionAllowanceBtmPlate" member="yes">
+																<label>Corrosion Allowance of Bottom Plate (mm)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL22" variable="txtCorrosionAllowanceBtmPlate" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtCorrosionAllowanceBtmPlate-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerChoiceTypeFixedRoof" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT23" variable="lblTypeFixedRoof" member="yes">
+																<label>Type of Fixed Roof</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE5" variable="cmbChoiceTypeFixedRoof" member="yes">
+																<content>
+																	<item>SELF SUPPORTING CONE ROOF</item>
+																	<item>SELF SUPPORTING DOME/UMBRELLA ROOF</item>
+																	<item>SUPPORTED CONE ROOF</item>
+																	<item>SUPPORTED DOME/UMBRELLA ROOF</item>
+																	<item>STIFFENED CONE ROOF</item>
+																	<item>STIFFENED DOME ROOF</item>
+																	<item>GEODESIC ROOF</item>
+																	<item>NONE</item>
+																</content>
+																<minsize>240,-1</minsize>
+																<maxsize>240,0</maxsize>
+																<handler function="OncmbChoiceTypeFixedRoofSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_TOP</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerCorrosionAllowanceFixedRoof" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT24" variable="lblCorrosionAllowanceFixedRoof" member="yes">
+																<label>Corrosion Allowance of Fixed Roof (mm)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL24" variable="txtCorrosionAllowanceFixedRoof" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtCorrosionAllowanceFixedRoof-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerWtSpiralStairway" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT25" variable="lblWtSpiralStairway" member="yes">
+																<label>Weight of Spiral Stairway (Kg)</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL25" variable="txtWtSpiralStairway" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtWtSpiralStairway-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerIncWtShellNozzleOtherShellApptnces" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT26" variable="lblIncWtShellNozzleOtherShellApptnces" member="yes">
+																<label>                                % increase in weight For Misc Items</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxTextCtrl" name="ID_TEXTCTRL26" variable="txtIncWtShellNozzleOtherShellApptnces" member="yes">
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<extra_code>txtIncWtShellNozzleOtherShellApptnces-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+															<size>266,20</size>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT64" variable="StaticText1" member="yes">
+																<label>                                    Rounding-up of thickness: mm</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE18" variable="CmbRoundUpTo" member="yes">
+																<content>
+																	<item>1 mm</item>
+																	<item>0.1 mm</item>
+																</content>
+																<selection>1</selection>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<handler function="OnCmbRoundUpToSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT65" variable="StaticText5" member="yes">
+																<label>              Use Corroded thickness for stiffener design</label>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxChoice" name="ID_CHOICE19" variable="cmbOptionStfr" member="yes">
+																<content>
+																	<item>No</item>
+																	<item>Yes</item>
+																</content>
+																<selection>1</selection>
+																<minsize>240,-1</minsize>
+																<maxsize>240,-1</maxsize>
+																<handler function="OncmbOptionStfrSelect" entry="EVT_CHOICE" />
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="spacer">
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL</flag>
+											<border>5</border>
+										</object>
+									</object>
+								</object>
+								<label>Design Data</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL2" variable="pnlWindData" member="yes">
+									<object class="wxBoxSizer" variable="BoxSizerWindDataMain" member="yes">
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerCodeWindLoad" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL3" variable="pnlCodeWindLoad" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlCodeWindLoad" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT27" variable="lblCodeWindLoad" member="yes">
+																	<label>Code for Wind Load</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxChoice" name="ID_CHOICE6" variable="cmbChoiceCodeWindLoad" member="yes">
+																	<content>
+																		<item>ASCE 7-05</item>
+																		<item>ASCE 7-10</item>
+																		<item>User Defined Wind Velocity</item>
+																	</content>
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<handler function="OncmbChoiceCodeWindLoadSelect" entry="EVT_CHOICE" />
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerDummy" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL12" variable="pnlDummy" member="yes" />
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerGustDesignWindSpeed" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL5" variable="pnlGustDesignWindSpeed" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlGustDesignWindSpeed" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT29" variable="lblGustDesignWindSpeed" member="yes">
+																	<label>3 Second Gust Design Wind Speed  (m / sec)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="ID_TEXTCTRL17" variable="txtGustDesignWindSpeed" member="yes">
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<extra_code>txtGustDesignWindSpeed-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerExposureCatgory" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL6" variable="pnlExposureCatgory" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlExposureCatgory" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT28" variable="lblExposureCatgory" member="yes">
+																	<label>Exposure Category</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxChoice" name="ID_CHOICE7" variable="cmbChoiceExposureCatgory" member="yes">
+																	<content>
+																		<item>B</item>
+																		<item>C</item>
+																		<item>D</item>
+																	</content>
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<handler function="OncmbChoiceExposureCatgorySelect" entry="EVT_CHOICE" />
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerVelPressureExpCoeff" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL4" variable="pnlVelPressureExpCoeff" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlVelPressureExpCoeff" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT30" variable="lblVelPressureExpCoeff" member="yes">
+																	<label>Velocity Pressure Exposure Coefficient (Kz)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="txtVelPressureExpCoeff" member="yes">
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<extra_code>txtVelPressureExpCoeff-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerTopographicFactor" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL7" variable="pnlTopographicFactor" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlTopographicFactor" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT31" variable="lblTopographicFactor" member="yes">
+																	<label>Topographic Factor (Kzt)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="ID_TEXTCTRL14" variable="txtTopographicFactor" member="yes">
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<extra_code>txtTopographicFactor-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerDirectionFactor" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL8" variable="pnlDirectionFactor" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlDirectionFactor" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT32" variable="lblDirectionFactor" member="yes">
+																	<label>Directionality Factor (kd)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="ID_TEXTCTRL21" variable="txtDirectionFactor" member="yes">
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<extra_code>txtDirectionFactor-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerImportanceFactor" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL9" variable="pnlImportanceFactor" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlImportanceFactor" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT33" variable="lblImportanceFactor" member="yes">
+																	<label>Importance Factor (I)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxChoice" name="ID_CHOICE8" variable="cmbChoiceImportanceFactor" member="yes">
+																	<content>
+																		<item>1.00</item>
+																		<item>1.15</item>
+																	</content>
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<handler function="OncmbChoiceImportanceFactorSelect" entry="EVT_CHOICE" />
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerGustFactor" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL10" variable="pnlGustFactor" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlGustFactor" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT34" variable="lblGustFactor" member="yes">
+																	<label>Gust Factor (G)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="ID_TEXTCTRL23" variable="txtGustFactor" member="yes">
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<extra_code>txtGustFactor-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerDesignWindVel" member="no">
+												<object class="sizeritem">
+													<object class="wxPanel" name="ID_PANEL11" variable="pnlDesignWindVel" member="yes">
+														<object class="wxBoxSizer" variable="BoxSizerPnlDesignWindVel" member="no">
+															<object class="sizeritem">
+																<object class="wxStaticText" name="ID_STATICTEXT35" variable="lblDesignWindVel" member="yes">
+																	<label>Design Wind Velocity (km / h)</label>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="ID_TEXTCTRL27" variable="txtDesignWindVel" member="yes">
+																	<minsize>240,-1</minsize>
+																	<maxsize>240,-1</maxsize>
+																	<extra_code>txtDesignWindVel-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																</object>
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+															</object>
+															<object class="spacer">
+																<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																<border>5</border>
+																<option>1</option>
+															</object>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BUTTON1" variable="windDataRunButton" member="yes">
+												<label>Click here to update design wind velocity</label>
+												<maxsize>-1,40</maxsize>
+												<handler function="OnwindDataRunButtonClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="spacer">
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+								</object>
+								<label>Wind Data</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL13" variable="pnlSeismicData" member="yes">
+									<object class="wxBoxSizer" variable="BoxSizerSeismicDataMain" member="yes">
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerVariableCtrls" member="yes">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSeismicDesignChoice" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL14" variable="pnlSeismicDesignChoice" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSeismicDesignChoice" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT36" variable="lblSeismicDesignChoice" member="yes">
+																			<label>Seismic Design as per:</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxChoice" name="ID_CHOICE9" variable="cmbChoiceSeismicDesignChoice" member="yes">
+																			<content>
+																				<item>ASCE 7</item>
+																				<item>UBC 97</item>
+																				<item>Peak Ground Acceleration</item>
+																			</content>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<handler function="OncmbChoiceSeismicDesignChoiceSelect" entry="EVT_CHOICE" />
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerDummySeismic" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL15" variable="pnlDummySeismic" member="yes" />
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerGrpPeakGrndAccel" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL16" variable="pnlGrpPeakGrndAccel" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerGrpPeakGrndAcce" member="no">
+																	<orient>wxVERTICAL</orient>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerPeakGroundAccel" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT37" variable="lblPeakGroundAccel" member="yes">
+																					<label>Peak Ground Acceleration</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL28" variable="txtPeakGroundAccel" member="yes">
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																					<extra_code>txtPeakGroundAccel-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerPGASpectralAccelShort" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT38" variable="lblPGASpectralAccelShort" member="yes">
+																					<label>Spectral Acceleration at Short Period (SS)</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL29" variable="txtPGASpectralAccelShort" member="yes">
+																					<enabled>0</enabled>
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerPGASpectralAccelOneSec" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT39" variable="lblPGASpectralAccelOneSec" member="yes">
+																					<label>Spectral Acceleration at One second (S1)</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL30" variable="txtPGASpectralAccelOneSec" member="yes">
+																					<enabled>0</enabled>
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerGrpUBC" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL17" variable="pnlGrpUBC" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlGrpUBC" member="no">
+																	<orient>wxVERTICAL</orient>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerUBCZoneNo" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT40" variable="lblUBCZoneNo" member="yes">
+																					<label>UBC Zone No.</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxChoice" name="ID_CHOICE10" variable="cmbChoiceUBCZoneNo" member="yes">
+																					<content>
+																						<item>Zone-1</item>
+																						<item>Zone-2A</item>
+																						<item>Zone-2B</item>
+																						<item>Zone-3</item>
+																						<item>Zone-4</item>
+																					</content>
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																					<handler function="OncmbChoiceUBCZoneNoSelect" entry="EVT_CHOICE" />
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerUBCPeakGrndAccel" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT41" variable="lblUBCPeakGrndAccel" member="yes">
+																					<label>Peak Ground Acceleration</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL31" variable="txtUBCPeakGrndAccel" member="yes">
+																					<enabled>0</enabled>
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerUBCSpectralAccelShort" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT42" variable="lblUBCSpectralAccelShort" member="yes">
+																					<label>Spectral Acceleration at Short Period (SS)</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL32" variable="txtUBCSpectralAccelShort" member="yes">
+																					<enabled>0</enabled>
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerUBCSpectralAccelOneSec" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT43" variable="lblUBCSpectralAccelOneSec" member="yes">
+																					<label>Spectral Acceleration at One second (S1)</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL33" variable="txtUBCSpectralAccelOneSec" member="yes">
+																					<enabled>0</enabled>
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerGrpASCE" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL18" variable="pnlGrpASCE" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlGrpASCE" member="no">
+																	<orient>wxVERTICAL</orient>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerASCESpectralAccelShort" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT44" variable="lblASCESpectralAccelShort" member="yes">
+																					<label>Spectral Acceleration at Short Period (SS)</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL34" variable="txtASCESpectralAccelShort" member="yes">
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																					<extra_code>txtASCESpectralAccelShort-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxBoxSizer" variable="BoxSizerASCESpectralAccelOneSec" member="no">
+																			<object class="sizeritem">
+																				<object class="wxStaticText" name="ID_STATICTEXT45" variable="lblASCESpectralAccelOneSec" member="yes">
+																					<label>Spectral Acceleration at One second (S1)</label>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																			<object class="sizeritem">
+																				<object class="wxTextCtrl" name="ID_TEXTCTRL35" variable="txtASCESpectralAccelOneSec" member="yes">
+																					<minsize>240,-1</minsize>
+																					<maxsize>240,-1</maxsize>
+																					<extra_code>txtASCESpectralAccelOneSec-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+																				</object>
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																			</object>
+																			<object class="spacer">
+																				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																				<border>5</border>
+																				<option>1</option>
+																			</object>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="spacer">
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxButton" name="ID_BUTTON5" variable="CalcFaFvBtn" member="yes">
+														<label>Run</label>
+														<handler function="OnCalcFaFvBtnClick" entry="EVT_BUTTON" />
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_TOP</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizerFixedCtrls" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSpectralAccelTimePeriod0" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL20" variable="pnlSpectralAccelTimePeriod0" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSpectralAccelTimePeriod0" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT46" variable="lblSpectralAccelTimePeriod0" member="yes">
+																			<label>Spectral Acceleration at Time Period  0  (S0)</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL36" variable="txtSpectralAccelTimePeriod0" member="yes">
+																			<enabled>0</enabled>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerGovByASCERules" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL21" variable="pnlGovByASCERules" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlGovByASCERules" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT47" variable="lblGovByASCERules" member="yes">
+																			<label>Is the site governed by ASCE Rules</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxChoice" name="ID_CHOICE11" variable="cmbChoiceGovByASCERules" member="yes">
+																			<content>
+																				<item>NO</item>
+																				<item>YES</item>
+																			</content>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<handler function="OncmbChoiceGovByASCERulesSelect" entry="EVT_CHOICE" />
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSeismicScaleFactor" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL22" variable="pnlSeismicScaleFactor" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSeismicScaleFactor" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT48" variable="lblSeismicScaleFactor" member="yes">
+																			<label>Scaling Factor (Q)</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL38" variable="txtSeismicScaleFactor" member="yes">
+																			<enabled>0</enabled>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSeismicUserGrp" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL23" variable="pnlSeismicUserGrp" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSeismicUserGrp" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT49" variable="lblSeismicUserGrp" member="yes">
+																			<label>Seismic User Group</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxChoice" name="ID_CHOICE12" variable="cmbChoiceSeismicUserGrp" member="yes">
+																			<content>
+																				<item>SUG-1</item>
+																				<item>SUG-2</item>
+																				<item>SUG-3</item>
+																			</content>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<handler function="OncmbChoiceSeismicUserGrpSelect" entry="EVT_CHOICE" />
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSeismicImportanceFactor" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL24" variable="pnlSeismicImportanceFactor" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSeismicImportanceFactor" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT50" variable="lblSeismicImportanceFactor" member="yes">
+																			<label>Importance Factor</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL40" variable="txtSeismicImportanceFactor" member="yes">
+																			<enabled>0</enabled>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSeismicSiteClass" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL25" variable="pnlSeismicSiteClass" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSeismicSiteClass" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT51" variable="lblSeismicSiteClass" member="yes">
+																			<label>Site Class</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxChoice" name="ID_CHOICE13" variable="cmbChoiceSeismicSiteClass" member="yes">
+																			<content>
+																				<item>A</item>
+																				<item>B</item>
+																				<item>C</item>
+																				<item>D</item>
+																				<item>E</item>
+																			</content>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<handler function="OncmbChoiceSeismicSiteClassSelect" entry="EVT_CHOICE" />
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerAccelBaseSiteCoeff" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL26" variable="pnlAccelBaseSiteCoeff" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlAccelBaseSiteCoeff" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT52" variable="lblAccelBaseSiteCoeff" member="yes">
+																			<label>Acceleration based site coefficient (Fa)</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL42" variable="txtAccelBaseSiteCoeff" member="yes">
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<extra_code>txtAccelBaseSiteCoeff-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerVelBasedSiteCoeff" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL27" variable="pnlVelBasedSiteCoeff" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlVelBasedSiteCoeff" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT53" variable="lblVelBasedSiteCoeff" member="yes">
+																			<label>Velocity based site coefficient (Fv)</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL43" variable="txtVelBasedSiteCoeff" member="yes">
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<extra_code>txtVelBasedSiteCoeff-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerTransitionLongGrnd" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL28" variable="pnlTransitionLongGrnd" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlTransitionLongGrnd" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT54" variable="lblTransitionLongGrnd" member="yes">
+																			<label>Transition Period for Longer period Ground motion (TL)</label>
+																			<size>226,38</size>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL44" variable="txtTransitionLongGrnd" member="yes">
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<extra_code>txtTransitionLongGrnd-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerCoeffAdjust" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL29" variable="pnlCoeffAdjust" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlCoeffAdjust" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT55" variable="lblCoeffAdjust" member="yes">
+																			<label>Coefficient to adjust 5% damping&#x0A;value to 0.5% Damping value (K)</label>
+																			<size>-1,-1</size>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL45" variable="txtCoeffAdjust" member="yes">
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<extra_code>txtCoeffAdjust-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSDSQFaSs" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL30" variable="pnlSDSQFaSs" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSDSQFaSs" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT56" variable="lblSDSQFaSs" member="yes">
+																			<label>SDS = Q * Fa * Ss = </label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL46" variable="txtSDSQFaSs" member="yes">
+																			<enabled>0</enabled>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerSD1QFvS1" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL31" variable="pnlSD1QFvS1" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlSD1QFvS1" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT57" variable="lblSD1QFvS1" member="yes">
+																			<label>SD1 = Q * Fv * S1 = </label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxTextCtrl" name="ID_TEXTCTRL47" variable="txtSD1QFvS1" member="yes">
+																			<enabled>0</enabled>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizerVertSeismicEffect" member="no">
+														<object class="sizeritem">
+															<object class="wxPanel" name="ID_PANEL19" variable="pnlVertSeismicEffect" member="yes">
+																<object class="wxBoxSizer" variable="BoxSizerPnlVertSeismicEffect" member="no">
+																	<object class="sizeritem">
+																		<object class="wxStaticText" name="ID_STATICTEXT58" variable="lblVertSeismicEffect" member="yes">
+																			<label>Vertical Seismic Effect To Be Considered ?</label>
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																	<object class="sizeritem">
+																		<object class="wxChoice" name="ID_CHOICE14" variable="cmbChoiceVertSeismicEffect" member="yes">
+																			<content>
+																				<item>NO</item>
+																				<item>YES</item>
+																			</content>
+																			<minsize>240,-1</minsize>
+																			<maxsize>240,-1</maxsize>
+																			<handler function="OncmbChoiceVertSeismicEffectSelect" entry="EVT_CHOICE" />
+																		</object>
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																	</object>
+																	<object class="spacer">
+																		<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+																		<border>5</border>
+																		<option>1</option>
+																	</object>
+																</object>
+															</object>
+															<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxALIGN_TOP</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+								</object>
+								<label>Seismic Data</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL32" variable="pnlShlDesMain" member="yes">
+									<object class="wxGrid" name="ID_GRID1" variable="gridShellDesign" member="yes">
+										<pos>0,100</pos>
+										<size>1260,400</size>
+										<style>wxSIMPLE_BORDER</style>
+										<handler function="OnGrid1CellLeftClick" entry="EVT_CMD_GRID_CELL_LEFT_CLICK" />
+									</object>
+									<object class="wxButton" name="ID_BUTTON2" variable="ButtonRunShell" member="yes">
+										<label>Add Shell Course</label>
+										<pos>264,512</pos>
+										<handler function="OnButtonRunShellClick" entry="EVT_BUTTON" />
+									</object>
+									<object class="wxButton" name="ID_BUTTON3" variable="ButtonDesignShell" member="yes">
+										<label>Design</label>
+										<pos>464,512</pos>
+										<handler function="OnButtonDesignShellClick" entry="EVT_BUTTON" />
+									</object>
+									<object class="wxGrid" name="ID_GRID44" variable="gridShellDesignLabel" member="yes">
+										<pos>0,0</pos>
+										<size>1260,100</size>
+										<enabled>0</enabled>
+										<style>wxSIMPLE_BORDER|wxVSCROLL|wxHSCROLL</style>
+										<handler function="OngridShellDesignLabelCellLeftClick" entry="EVT_CMD_GRID_CELL_LEFT_CLICK" />
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT91" variable="StaticText4" member="yes">
+										<label>NOTE : Please click &apos;Add Shell Course&apos; button and then make necessary corrections in the &apos;Course Material&apos;, &apos;Course Width&apos;  and &apos;Corrosion Allowance&apos;  of each shell course, if it is different from previous shell course and then click &apos;Add Shell Course&apos;  to Auto-Fill,  save changes, and add another Shell Course.</label>
+										<pos>32,576</pos>
+										<size>544,64</size>
+									</object>
+								</object>
+								<label>Shell Design</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL33" variable="pnlMainPrimaryWindGirder" member="yes">
+									<object class="wxStaticText" name="ID_STATICTEXT59" variable="lblTopWGAsWalkway" member="yes">
+										<label>Is Top Wind Girder used as a Walkway ?</label>
+										<pos>32,56</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT60" variable="lblSpaceTopWGTopTank" member="yes">
+										<label>Spacing of Top Wind Girder from top of Tank</label>
+										<pos>32,88</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT61" variable="lblSizeTopAngle" member="yes">
+										<label>Size of top angle</label>
+										<pos>32,120</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT62" variable="lblMinWidthTopWGAsWalkway" member="yes">
+										<label>Minimum required width of Top WG used as walkway</label>
+										<pos>32,152</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT63" variable="lblDesignTopWGTankDia" member="yes">
+										<label>Design Top Wind Girder Considering the Tank DIA as 61.0 M ?</label>
+										<pos>32,184</pos>
+										<size>264,40</size>
+									</object>
+									<object class="wxChoice" name="ID_CHOICE15" variable="cmbTopWGAsWalkway" member="yes">
+										<content>
+											<item>NO</item>
+											<item>YES</item>
+										</content>
+										<pos>336,48</pos>
+										<handler function="OncmbTopWGAsWalkwaySelect" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL37" variable="txtSpaceTopWGTopTank" member="yes">
+										<pos>336,80</pos>
+										<size>128,21</size>
+										<extra_code>txtSpaceTopWGTopTank-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxChoice" name="ID_CHOICE16" variable="cmblSizeTopAngle" member="yes">
+										<content>
+											<item>65 x 65 x 6</item>
+											<item>65 x 65 x 8</item>
+											<item>65 x 65 x 10</item>
+											<item>75 x 75 x 6</item>
+											<item>75 x 75 x 8</item>
+											<item>75 x 75 x 10</item>
+											<item>90 x 90 x 10</item>
+										</content>
+										<pos>336,112</pos>
+										<handler function="OncmblSizeTopAngleSelect" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL39" variable="txtMinWidthTopWGAsWalkway" member="yes">
+										<pos>336,144</pos>
+										<size>128,21</size>
+										<extra_code>txtMinWidthTopWGAsWalkway-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxChoice" name="ID_CHOICE17" variable="cmblDesignTopWGTankDia" member="yes">
+										<content>
+											<item>NO</item>
+											<item>YES</item>
+										</content>
+										<pos>336,176</pos>
+										<handler function="OncmblDesignTopWGTankDiaSelect" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxGrid" name="ID_GRID6" variable="Gridpwg" member="yes">
+										<cols>6</cols>
+										<rows>3</rows>
+										<defaultrowsize>30</defaultrowsize>
+										<defaultcolsize>150</defaultcolsize>
+										<collabels>
+											<item>Width of Web (mm)</item>
+											<item>Thickness of (mm)</item>
+											<item>Height of Flange (mm)</item>
+											<item>Thickness of Flange (mm)</item>
+											<item>Section Modulus Available(CM^3)</item>
+											<item>MOI Required (CM^4)</item>
+										</collabels>
+										<rowlabels>
+											<item>Default</item>
+											<item>User</item>
+											<item>Adopted</item>
+										</rowlabels>
+										<pos>32,380</pos>
+										<size>930,120</size>
+										<style>wxSIMPLE_BORDER</style>
+										<handler function="OnGrid1CellLeftClick1" entry="EVT_CMD_GRID_CELL_LEFT_CLICK" />
+									</object>
+									<object class="wxButton" name="ID_BUTTON6" variable="RunPWG" member="yes">
+										<label>Run</label>
+										<pos>232,320</pos>
+										<handler function="OnRunPWGClick1" entry="EVT_BUTTON" />
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT66" variable="lblSectionModRqd" member="yes">
+										<label>Section Modulus Required: Cub Cm</label>
+										<pos>32,232</pos>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL41" variable="TextSectionModRqd" member="yes">
+										<pos>336,224</pos>
+										<size>128,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT67" variable="lblMOIRqd" member="yes">
+										<label>Moment of Ineria Required  CM^4</label>
+										<pos>32,264</pos>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL48" variable="TextMOIRqd" member="yes">
+										<pos>336,256</pos>
+										<size>128,21</size>
+										<enabled>0</enabled>
+									</object>
+								</object>
+								<label>Primary Wind Girder Design</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL35" variable="pnlStiffenerElevation" member="yes">
+									<object class="wxStaticText" name="ID_STATICTEXTlblHeightTransShell" variable="lblHeightTransShell" member="yes">
+										<label>Total Transposed Height of Shell</label>
+										<pos>104,32</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblT_uniform" variable="lblT_uniform" member="yes">
+										<label>t__uniform considered for design</label>
+										<pos>104,64</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblHMaxWind" variable="lblHMaxWind" member="yes">
+										<label>Maximum unstiffened height of shell against wind load</label>
+										<pos>104,96</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT92" variable="lblHMaxPressure" member="yes">
+										<label>Maximum Unstiffened height of shell against external pressure</label>
+										<pos>104,128</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblNumStiff" variable="lblNumStiff" member="yes">
+										<label>Number of stiffeners required</label>
+										<pos>104,160</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblNumStiffMax" variable="lblNumStiffMax" member="yes">
+										<label>Limit the number of stiffeners to (Minimum 1)</label>
+										<pos>104,192</pos>
+										<size>160,32</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLTextHeightTransShell" variable="TextHeightTransShell" member="yes">
+										<value>No Backend.</value>
+										<pos>464,32</pos>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLTextT_uniform" variable="TextT_uniform" member="yes">
+										<value>No Backend.</value>
+										<pos>464,64</pos>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLTextHMaxWind" variable="TextHMaxWind" member="yes">
+										<value>No Backend.</value>
+										<pos>464,96</pos>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLTextHMaxPressure" variable="TextHMaxPressure" member="yes">
+										<value>No Backend.</value>
+										<pos>464,128</pos>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLTextNumStiff" variable="TextNumStiff" member="yes">
+										<value>No backend.</value>
+										<pos>464,160</pos>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLTextNumStiffMax" variable="TextNumStiffMax" member="yes">
+										<pos>464,192</pos>
+										<extra_code>TextNumStiffMax-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxGrid" name="ID_GRID2" variable="GridStiffenerElevation" member="yes">
+										<pos>50,478</pos>
+										<size>1220,150</size>
+										<style>wxSIMPLE_BORDER</style>
+										<handler function="OnGridStiffenerElevationCellLeftClick" entry="EVT_CMD_GRID_CELL_LEFT_CLICK" />
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT89" variable="StaticText2" member="yes">
+										<label>M</label>
+										<pos>580,96</pos>
+										<size>28,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT90" variable="StaticText3" member="yes">
+										<label>M</label>
+										<pos>580,128</pos>
+										<size>28,24</size>
+									</object>
+									<object class="wxGrid" name="ID_GRID3" variable="GridStiffenerElevationLabel" member="yes">
+										<pos>50,370</pos>
+										<size>1220,108</size>
+										<style>wxSIMPLE_BORDER</style>
+									</object>
+									<object class="wxButton" name="ID_BUTTON4" variable="ButtonRunStiffenerElevation" member="yes">
+										<label>Run</label>
+										<pos>104,288</pos>
+										<handler function="OnButtonRunStiffenerElevationClick" entry="EVT_BUTTON" />
+									</object>
+								</object>
+								<label>Stiffener Elevation</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL37" variable="Panel1" member="yes">
+									<pos>300,600</pos>
+									<object class="wxGrid" name="ID_GRID4" variable="GridStiffenerSizeLabel1" member="yes">
+										<pos>0,0</pos>
+										<size>988,95</size>
+										<style>wxSIMPLE_BORDER</style>
+									</object>
+									<object class="wxGrid" name="ID_GRID5" variable="GridStiffenerSize" member="yes">
+										<pos>0,95</pos>
+										<size>988,370</size>
+										<style>wxSIMPLE_BORDER</style>
+										<handler function="OnGridStiffenerSizeCellLeftClick" entry="EVT_CMD_GRID_CELL_LEFT_CLICK" />
+										<handler function="OnGridStiffenerSizeCellChanged" entry="EVT_CMD_GRID_CELL_CHANGED" />
+									</object>
+									<object class="wxButton" name="ID_BUTTON7" variable="ButtonRunStiffenerSize" member="yes">
+										<label>RUN</label>
+										<pos>416,560</pos>
+										<handler function="OnButtonRunStiffenerSizeClick" entry="EVT_BUTTON" />
+									</object>
+								</object>
+								<label>Stiffener Size</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL" variable="pnlRoofData" member="yes">
+									<pos>4,122</pos>
+									<size>1738,573</size>
+									<handler function="OnpnlRoofDataPaint" entry="EVT_PAINT" />
+									<object class="wxStaticText" name="ID_STATICTEXTlblRoofTypeUser" variable="lblRoofTypeUser" member="yes">
+										<label>Roof Type Specified By User</label>
+										<pos>32,24</pos>
+										<size>137,32</size>
+									</object>
+									<object class="wxChoice" name="ID_CHOICEroofTypeUser" variable="cmbRoofType" member="yes">
+										<content>
+											<item>SELF SUPPORTING CONE ROOF</item>
+											<item>SELF SUPPORTING DOME/UMBRELLA ROOF</item>
+											<item>SUPPORTED CONE ROOF</item>
+											<item>SUPPORTED DOME/UMBRELLA ROOF</item>
+											<item>STIFFENED CONE ROOF</item>
+											<item>STIFFENED DOME ROOF</item>
+											<item>GEODESIC ROOF</item>
+											<item>NONE</item>
+										</content>
+										<pos>200,16</pos>
+										<size>248,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblRRoof" variable="lblRRoof" member="yes">
+										<label>Horizontal radius at the base of roof (M)&#x09;&#x09;&#x09;</label>
+										<pos>32,120</pos>
+										<size>144,40</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblFrangible" variable="lblFrangible" member="yes">
+										<label>Frangible Roof to Shell Junction Required?&#x09;&#x09;&#x09;</label>
+										<pos>32,168</pos>
+										<size>136,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblLiveLoad" variable="lblLiveLoad" member="yes">
+										<label>Live Load on Roof (kPa)&#x09;&#x09;</label>
+										<pos>32,232</pos>
+										<size>128,13</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblBalSL" variable="lblBalSL" member="yes">
+										<label>Balanced Design Snow Load -Sb (kPa)*&#x09;&#x09;&#x09;</label>
+										<pos>32,264</pos>
+										<size>128,40</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblUnBalSL" variable="lblUnBalSL" member="yes">
+										<label>Un-Balanced Design Snow Load -Sb (kPa)*&#x09;&#x09;&#x09;</label>
+										<pos>32,312</pos>
+										<size>128,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTtypeFR" variable="lblTypeFR" member="yes">
+										<label>Type of Floating Roof*&#x09;&#x09;&#x09;&#x09;</label>
+										<pos>624,336</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblMaterialRoof" variable="lblMaterialRoof" member="yes">
+										<label>Material of Roof</label>
+										<pos>624,24</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblJEff" variable="lblJEff" member="yes">
+										<label>Joint Efficiency for Roof Plate Joint*</label>
+										<pos>32,570</pos>
+										<size>112,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblThickness" variable="lblTHickness" member="yes">
+										<label>Required Thickness of Roof (mm)*&#x09;&#x09;&#x09;</label>
+										<pos>624,64</pos>
+										<size>128,32</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL61" variable="txtRequiredThickness" member="yes">
+										<pos>784,56</pos>
+										<size>248,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtMaxSpace1" variable="txtMaxSpace1" member="yes">
+										<pos>784,112</pos>
+										<size>248,21</size>
+										<enabled>0</enabled>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtMaxSpace2" variable="txtMaxSpace2" member="yes">
+										<pos>784,160</pos>
+										<size>248,21</size>
+										<enabled>0</enabled>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblWeightNozzle" variable="lblWtNozzle" member="yes">
+										<label>Weight of Roof nozzles and other roof appurtenances*</label>
+										<pos>624,224</pos>
+										<size>160,48</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblWeightFR" variable="lblWeightFR" member="yes">
+										<label>Weight of Floating Roof (Kg)</label>
+										<pos>624,376</pos>
+										<size>128,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblSlopeRoof" variable="lblSlopeRoof" member="yes">
+										<label>Slope Of Roof*</label>
+										<pos>32,360</pos>
+										<size>120,24</size>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblDomeRadius" variable="lblDomeRadius" member="yes">
+										<label>Dome Radius (M)*</label>
+										<pos>32,400</pos>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblMaxSpace" variable="lblMaxSpace" member="yes">
+										<label>Maximum Spacing between rafters (M)*&#x09;&#x09;&#x09;&#x09;</label>
+										<pos>624,112</pos>
+										<size>144,40</size>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblMaxSPacePeri" variable="lblMaxSpacePeri" member="yes">
+										<label>Maximum Spacing between rafters at Periphery / Centre(M)&#x09;*</label>
+										<pos>624,160</pos>
+										<size>152,40</size>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtRRoof" variable="txtRRoof" member="yes">
+										<pos>200,120</pos>
+										<size>248,21</size>
+										<extra_code>txtRRoof-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblRoofTypeAdopted" variable="lblRoofTypeAdopted" member="yes">
+										<label>Roof Type Adopted</label>
+										<pos>32,72</pos>
+										<size>136,24</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtRoofTypeAdopted" variable="txtRoofTypeAdopted" member="yes">
+										<pos>200,72</pos>
+										<size>248,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxChoice" name="ID_CHOICEFrangible" variable="cmbFrangible" member="yes">
+										<content>
+											<item>NO</item>
+											<item>YES</item>
+										</content>
+										<pos>200,168</pos>
+										<size>248,21</size>
+										<handler function="OncmbFrangibleSelect2" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtLiveLoad" variable="txtLiveLoad" member="yes">
+										<pos>200,232</pos>
+										<size>248,21</size>
+										<extra_code>txtLiveLoad-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtBalancedSL" variable="txtBalancedSL" member="yes">
+										<pos>200,272</pos>
+										<size>248,21</size>
+										<extra_code>txtBalancedSL-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtUnBalancedSL" variable="txtUnBalancedSL" member="yes">
+										<pos>200,312</pos>
+										<size>248,21</size>
+										<extra_code>txtUnBalancedSL-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtDomeRadius" variable="txtDomeRadius" member="yes">
+										<pos>200,395</pos>
+										<size>248,21</size>
+										<extra_code>txtDomeRadius-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTwtGeodesicRoof" variable="lblWeightGeodesicRoof" member="yes">
+										<label>Weight of Geodesic Roof (Kg)</label>
+										<pos>32,448</pos>
+										<size>128,40</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLWtGeodesicRoof" variable="txtWtGeodesicRoof" member="yes">
+										<pos>200,448</pos>
+										<size>248,21</size>
+										<extra_code>txtWtGeodesicRoof-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtMaterialRoof" variable="txtMaterialRoof" member="yes">
+										<pos>784,16</pos>
+										<size>248,21</size>
+										<extra_code>txtMaterialRoof-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtWeightNozzle" variable="txtWeightNozzle" member="yes">
+										<pos>784,224</pos>
+										<size>248,21</size>
+										<extra_code>txtWeightNozzle-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxChoice" name="ID_CHOICEFR" variable="cmbTypeFloatingRoof" member="yes">
+										<content>
+											<item>Single Deck FLoating Roof</item>
+											<item>Double Deck Floating Roof</item>
+											<item>Aluminium Floating Roof</item>
+											<item>None</item>
+										</content>
+										<pos>784,328</pos>
+										<size>248,21</size>
+										<handler function="OncmbTypeFloatingRoofSelect1" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtWeightFloatingRoof" variable="txtWeightFloatingRoof" member="yes">
+										<pos>784,376</pos>
+										<size>248,21</size>
+										<extra_code>txtWeightFloatingRoof-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxChoice" name="ID_CHOICE20" variable="cmbJointEff" member="yes">
+										<content>
+											<item>0.35</item>
+											<item>0.7</item>
+											<item>1</item>
+										</content>
+										<pos>200,570</pos>
+										<size>248,21</size>
+										<handler function="OnChoice1Select" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT68" variable="lblCorrWeight" member="yes">
+										<label>Corroded weight of &#x0A;Roof Structure</label>
+										<pos>32,510</pos>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL20" variable="txtCorrWeight" member="yes">
+										<pos>200,510</pos>
+										<size>248,21</size>
+										<extra_code>txtCorrWeight-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL49" variable="txtPercWeight" member="yes">
+										<pos>784,448</pos>
+										<size>248,21</size>
+										<extra_code>txtPercWeight-&gt;SetBackgroundColour(wxColour(&quot;PINK&quot;));</extra_code>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT69" variable="lblPercWeight" member="yes">
+										<label>% weight of Roof &amp; Structure&#x0A;Supported By shell</label>
+										<pos>624,448</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT70" variable="StaticText6" member="yes">
+										<label>%</label>
+										<pos>1032,450</pos>
+										<size>16,24</size>
+									</object>
+									<object class="wxGauge" name="ID_GAUGE1" variable="Gauge1" member="yes">
+										<pos>199,352</pos>
+										<size>70,23</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL52" variable="txtSlopeNum" member="yes">
+										<pos>200,353</pos>
+										<size>32,21</size>
+										<extra_code>txtSlopeNum-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+										<style>wxTE_RIGHT|wxNO_BORDER</style>
+										<handler function="OntxtSlopeNumText" entry="EVT_TEXT" />
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT72" variable="StaticTextSlopeSlash" member="yes">
+										<label>/</label>
+										<pos>232,353</pos>
+										<size>4,21</size>
+										<font>
+											<size>10</size>
+										</font>
+										<extra_code>StaticTextSlopeSlash-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+										<style>wxNO_BORDER</style>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRL50" variable="txtSlopeDen" member="yes">
+										<pos>236,353</pos>
+										<size>32,21</size>
+										<extra_code>txtSlopeDen-&gt;SetBackgroundColour(wxColour(100,255,200));</extra_code>
+										<style>wxNO_BORDER</style>
+										<handler function="OntxtSlopeDenText" entry="EVT_TEXT" />
+									</object>
+									<object class="wxButton" name="ID_BUTTON9" variable="BtnRoofData" member="yes">
+										<label>Design</label>
+										<pos>552,552</pos>
+										<handler function="OnButton1Click1" entry="EVT_BUTTON" />
+									</object>
+								</object>
+								<label>Roof Data</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL34" variable="pnlRoofToShell" member="yes">
+									<object class="wxChoice" name="ID_CHOICEcmbTypeCR" variable="cmbTypeCR" member="yes">
+										<content>
+											<item>Type-a</item>
+											<item>Type-b</item>
+											<item>Type-c</item>
+											<item>Type-d</item>
+											<item>Type-e</item>
+											<item>Type-f</item>
+											<item>Type-g</item>
+											<item>Type-h</item>
+											<item>Type-i</item>
+											<item>Type-k</item>
+										</content>
+										<selection>0</selection>
+										<pos>352,208</pos>
+										<size>168,60</size>
+										<handler function="OncmbTypeCRSelect" entry="EVT_CHOICE" />
+									</object>
+									<object class="wxStaticBitmap" name="ID_STATICBITMAP" variable="StaticBitmap1" member="yes">
+										<pos>896,8</pos>
+										<hidden>1</hidden>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTud" variable="StaticTextud" member="yes">
+										<label>USER DEFINED</label>
+										<pos>352,24</pos>
+										<font>
+											<size>16</size>
+											<style>normal</style>
+											<weight>bold</weight>
+											<underlined>0</underlined>
+											<family>swiss</family>
+											<face>@Adobe Gothic Std B</face>
+										</font>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT88req" variable="StaticTextreq" member="yes">
+										<label>Required</label>
+										<pos>312,56</pos>
+										<font>
+											<size>11</size>
+											<style>normal</style>
+											<weight>bold</weight>
+											<underlined>0</underlined>
+											<family>swiss</family>
+											<face>@Adobe Gothic Std B</face>
+										</font>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTaval" variable="StaticTextaval" member="yes">
+										<label>Available</label>
+										<pos>480,56</pos>
+										<font>
+											<size>11</size>
+											<style>normal</style>
+											<weight>bold</weight>
+											<underlined>0</underlined>
+											<family>swiss</family>
+											<face>@Adobe Gothic Std B</face>
+										</font>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCrossSecInternalPressureReq" variable="txtCrossSecInternalPressureReq" member="yes">
+										<pos>248,104</pos>
+										<size>176,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCrossSecExternalPressureReq" variable="txtCrossSecExternalPressureReq" member="yes">
+										<pos>248,136</pos>
+										<size>176,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtMIExternalPressureReq" variable="txtMIExternalPressureReq" member="yes">
+										<pos>248,168</pos>
+										<size>176,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCrossSecInternalPressureAvail" variable="txtCrossSecInternalPressureAvail" member="yes">
+										<pos>432,104</pos>
+										<size>192,21</size>
+										<enabled>0</enabled>
+										<handler function="OntxtCrossSecInternalPressureAvailText" entry="EVT_TEXT" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCrossSecExternalPressureAvail" variable="txtCrossSecExternalPressureAvail" member="yes">
+										<pos>432,136</pos>
+										<size>192,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtMIExternalPressureAvail" variable="txtMIExternalPressureAvail" member="yes">
+										<pos>432,168</pos>
+										<size>192,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblCrossInt" variable="StaticTextlblCrossInt" member="yes">
+										<label>Cross sectional Area of Compression Ring  For Internal Pressure</label>
+										<pos>8,104</pos>
+										<size>224,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblCrossExt" variable="lblCrossExt" member="yes">
+										<label>Cross sectional Area of Compression Ring  For External Pressure</label>
+										<pos>8,136</pos>
+										<size>224,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblMIExt" variable="lblMIExt" member="yes">
+										<label>Moment Of Inertia  of Compression Ring  For External Pressure</label>
+										<pos>8,168</pos>
+										<size>224,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblTypeCR" variable="lblTypeCR" member="yes">
+										<label>Type of Compression Ring</label>
+										<pos>32,216</pos>
+										<size>184,24</size>
+										<font>
+											<size>10</size>
+											<style>normal</style>
+											<weight>bold</weight>
+											<underlined>0</underlined>
+											<family>swiss</family>
+										</font>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblThick" variable="lblThickness" member="yes">
+										<label>Thickness</label>
+										<pos>256,232</pos>
+										<size>56,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblWidth" variable="lblWidth" member="yes">
+										<label>Total Width</label>
+										<pos>328,232</pos>
+										<size>40,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblProj" variable="lblProj" member="yes">
+										<label>External Projection-L </label>
+										<pos>384,232</pos>
+										<size>72,32</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCRSize1" variable="txtCRSize1" member="yes">
+										<pos>248,264</pos>
+										<size>192,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCRSize2" variable="txtCRSize2" member="yes">
+										<pos>248,288</pos>
+										<size>192,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTbar" variable="txtTBar" member="yes">
+										<pos>248,320</pos>
+										<size>64,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtWBar" variable="txtWBar" member="yes">
+										<pos>312,320</pos>
+										<size>64,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtLBar" variable="txtLBar" member="yes">
+										<pos>376,320</pos>
+										<size>64,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTShell" variable="txtTShell" member="yes">
+										<pos>248,352</pos>
+										<size>64,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtWShell" variable="txtWShell" member="yes">
+										<pos>312,352</pos>
+										<size>64,21</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblUser1" variable="lblUser1" member="yes">
+										<label>Size of Added Angle</label>
+										<pos>8,264</pos>
+										<size>176,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblUser2" variable="lblUser2" member="yes">
+										<label>Size of Added Angle Inside</label>
+										<pos>8,288</pos>
+										<size>184,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblUser3" variable="lblUser3" member="yes">
+										<label>Thickness &amp; Width of Bar welded to shell. mm</label>
+										<pos>8,320</pos>
+										<size>232,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblUser4" variable="lblUser4" member="yes">
+										<label>Label</label>
+										<pos>8,352</pos>
+										<size>184,13</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblMaterialCR" variable="lblMaterialCR" member="yes">
+										<label>Material Of Construction</label>
+										<pos>480,232</pos>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCRMaterial0" variable="txtCRMaterial0" member="yes">
+										<pos>456,264</pos>
+										<size>176,48</size>
+										<handler function="OntxtCRMaterial0Text" entry="EVT_TEXT" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCRMaterial2" variable="txtCRMaterial2" member="yes">
+										<pos>456,320</pos>
+										<size>176,21</size>
+										<handler function="OntxtCRMaterial2Text" entry="EVT_TEXT" />
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCRMaterial1" variable="txtCRMaterial1" member="yes">
+										<pos>456,352</pos>
+										<size>176,21</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXT88" variable="StaticTextad" member="yes">
+										<label>ADOPTED</label>
+										<pos>928,24</pos>
+										<font>
+											<size>16</size>
+											<style>normal</style>
+											<weight>bold</weight>
+											<underlined>0</underlined>
+											<family>swiss</family>
+											<face>@Adobe Gothic Std B</face>
+										</font>
+									</object>
+									<object class="wxChoice" name="ID_CHOICEcmbTypeCRAD" variable="cmbTypeCRAD" member="yes">
+										<content>
+											<item>Type-a</item>
+											<item>Type-b</item>
+											<item>Type-c</item>
+											<item>Type-d</item>
+											<item>Type-e</item>
+											<item>Type-f</item>
+											<item>Type-g</item>
+											<item>Type-h</item>
+											<item>Type-i</item>
+											<item>Type-k</item>
+										</content>
+										<selection>0</selection>
+										<pos>896,208</pos>
+										<size>176,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxStaticText" name="ID_TCRAD" variable="lblTCR_AD" member="yes">
+										<label>Type of Compression Ring</label>
+										<pos>688,208</pos>
+										<font>
+											<size>10</size>
+											<style>normal</style>
+											<weight>bold</weight>
+											<underlined>0</underlined>
+											<family>swiss</family>
+										</font>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblThickNessAD" variable="lblThicknessAD" member="yes">
+										<label>Thickness</label>
+										<pos>888,232</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblWidthAD" variable="lblWidthAD" member="yes">
+										<label>Total Width</label>
+										<pos>976,232</pos>
+										<size>64,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblProjAD" variable="lblProjAD" member="yes">
+										<label>External Projection-L</label>
+										<pos>1064,232</pos>
+										<size>72,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblAD1" variable="lblUser1AD" member="yes">
+										<label>Size of Added Angle</label>
+										<pos>680,264</pos>
+										<size>120,13</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblAD2" variable="lblUser2AD" member="yes">
+										<label>Size of Added Angle Inside</label>
+										<pos>680,296</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblAD3" variable="lblUser3AD" member="yes">
+										<label>Label</label>
+										<pos>680,320</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblAD4" variable="lblUser4AD" member="yes">
+										<label>Label</label>
+										<pos>680,352</pos>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTypeCR1AD" variable="txtCRSize1AD" member="yes">
+										<pos>896,264</pos>
+										<size>216,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTypeCR2AD" variable="txtCRSize2AD" member="yes">
+										<pos>896,288</pos>
+										<size>216,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTBarAD" variable="txtTBarAD" member="yes">
+										<pos>896,312</pos>
+										<size>72,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtWBarAD" variable="txtWBarAD" member="yes">
+										<pos>968,312</pos>
+										<size>72,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtLBarAD" variable="txtLBarAD" member="yes">
+										<pos>1040,312</pos>
+										<size>72,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTShellAD" variable="txtTShellAD" member="yes">
+										<pos>896,344</pos>
+										<size>72,21</size>
+										<enabled>0</enabled>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLWShell" variable="txtWShellAD" member="yes">
+										<pos>968,344</pos>
+										<size>72,21</size>
+										<enabled>0</enabled>
+									</object>
+								</object>
+								<label>Roof to Shell Junction</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL36" variable="pnlBottomPlateAnchorDesign" member="yes">
+									<object class="wxStaticText" name="ID_STATICTEXTlblThicknessBottomPlate" variable="lblThicknessBottomPlate" member="yes">
+										<label>Thickness of Bottom plate&#x09;&#x09;</label>
+										<pos>64,40</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblReqAnnular" variable="lblReqAnnular" member="yes">
+										<label>Requirement of Annular Plate as per code&#x09;&#x09;</label>
+										<pos>64,88</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblThicknessAnnularPlate" variable="lblThicknessAnnularPlate" member="yes">
+										<label>Thickness of Annular plate&#x09;&#x09;</label>
+										<pos>64,128</pos>
+										<size>149,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblWidthAnnularPlate" variable="lblWidthAnnularPlate" member="yes">
+										<label>Width of Annular plate&#x09;&#x09;</label>
+										<pos>64,176</pos>
+										<size>131,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblReqAnchorage" variable="lblReqAnchorage" member="yes">
+										<label>Requirement of anchorage as per code&#x09;&#x09;</label>
+										<pos>64,224</pos>
+										<size>210,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblNumAnchorBolts" variable="lblNumAnchorBolts" member="yes">
+										<label>Number of Anchor Bolts &#x09;&#x09;</label>
+										<pos>64,272</pos>
+										<size>139,21</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblNominalBoltDia" variable="lblNominalBoltDia" member="yes">
+										<label>Nominal Bolt Dia&#x09;&#x09;</label>
+										<pos>64,328</pos>
+										<size>99,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblCorrosionAllowance" variable="lblCorrosionAllowance" member="yes">
+										<label>Corrosion Allowance on Bolt&#x09;&#x09;</label>
+										<pos>64,376</pos>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblYeildStrengthBoltMaterial" variable="lblYeildStrengthBoltMaterial" member="yes">
+										<label>Yield Strength of Bolt Material&#x09;&#x09;</label>
+										<pos>64,424</pos>
+										<size>165,24</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtThicknessBottomPlate" variable="txtThicknessBottomPlate" member="yes">
+										<pos>320,32</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxChoice" name="ID_CHOICEcmbReqAnnular" variable="cmbReqAnnular" member="yes">
+										<content>
+											<item>YES</item>
+											<item>NO</item>
+										</content>
+										<selection>0</selection>
+										<pos>320,80</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtThicknessAnnularPlate" variable="txtThicknessAnnularPlate" member="yes">
+										<pos>320,128</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtWidthAnnularPlate" variable="txtWidthAnnularPlate" member="yes">
+										<pos>320,176</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxChoice" name="ID_CHOICEcmbReqAnchorage" variable="cmbReqAnchorage" member="yes">
+										<content>
+											<item>YES</item>
+											<item>NO</item>
+										</content>
+										<selection>0</selection>
+										<pos>320,224</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtNumAnchorBolts" variable="txtNumAnchorBolts" member="yes">
+										<pos>320,272</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtNominalBoltDia" variable="txtNominalBoltDia" member="yes">
+										<pos>320,320</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtCorrosionAllowance" variable="txtCorrosionAllowance" member="yes">
+										<pos>320,368</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtYeildStrengthBoltMaterial" variable="txtYeildStrengthBoltMaterial" member="yes">
+										<pos>320,416</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblPadThickness" variable="lblPadThickness" member="yes">
+										<label>Pad Thickness&#x09;&#x09;</label>
+										<pos>608,40</pos>
+										<size>90,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblSpacingBetweenGussets" variable="lblSpacingBetweenGussets" member="yes">
+										<label>Spacing Between Gussets (g)&#x09;&#x09;</label>
+										<pos>608,80</pos>
+										<size>163,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblTopPlateLengthShell" variable="lblTopPlateLengthShell" member="yes">
+										<label>Top Plate Length Along Shell (a)&#x09;&#x09;</label>
+										<pos>608,128</pos>
+										<size>176,32</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblTopPlateLengthRadial" variable="lblTopPlateLengthRadial" member="yes">
+										<label>Top Plate Length Radial (b)&#x09;&#x09;</label>
+										<pos>608,176</pos>
+										<size>153,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblTopPlateThickness" variable="lblTopPlateThickness" member="yes">
+										<label>Top Plate Thickness&#x09;&#x09;</label>
+										<pos>608,232</pos>
+										<size>117,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblBoltEccentricity" variable="lblBoltEccentricity" member="yes">
+										<label>Bolt Eccentricity (e)&#x09;&#x09;</label>
+										<pos>608,272</pos>
+										<size>116,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblAnchorChairHeight" variable="lblAnchorChairHeight" member="yes">
+										<label>Anchor Chair height (h)&#x09;&#x09;</label>
+										<pos>608,328</pos>
+										<size>135,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblVerticalPlateThickness" variable="lblVerticalPlateThickness" member="yes">
+										<label>Vertical Plate Thickness (j)&#x09;&#x09;</label>
+										<pos>608,376</pos>
+										<size>148,24</size>
+									</object>
+									<object class="wxStaticText" name="ID_STATICTEXTlblAvgVerticalPlateWidth" variable="lblAvgVerticalPlateWidth" member="yes">
+										<label>Average Vertical Plate Width (k)&#x09;&#x09;</label>
+										<pos>608,416</pos>
+										<size>176,24</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtPadThickness" variable="txtPadThickness" member="yes">
+										<pos>808,32</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtSpacingBetweenGussets" variable="txtSpacingBetweenGussets" member="yes">
+										<pos>808,80</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTopPlateLengthShell" variable="txtTopPlateLengthShell" member="yes">
+										<pos>808,128</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTopPlateLengthRadial" variable="txtTopPlateLengthRadial" member="yes">
+										<pos>808,176</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtTopPlateThickness" variable="txtTopPlateThickness" member="yes">
+										<pos>808,224</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtBoltEccentricity" variable="txtBoltEccentricity" member="yes">
+										<pos>808,272</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtAnchorChairHeight" variable="txtAnchorChairHeight" member="yes">
+										<pos>808,320</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtVerticalPlateThickness" variable="txtVerticalPlateThickness" member="yes">
+										<pos>808,368</pos>
+										<size>152,21</size>
+									</object>
+									<object class="wxTextCtrl" name="ID_TEXTCTRLtxtAvgVerticalPlateWidth" variable="txtAvgVerticalPlateWidth" member="yes">
+										<pos>808,416</pos>
+										<size>152,21</size>
+									</object>
+								</object>
+								<label>Bottom Plate and Anchor Design</label>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizerDlgButtons" member="yes">
+					<object class="sizeritem">
+						<object class="wxButton" name="wxID_OK" variable="btnOk" member="yes">
+							<label>OK</label>
+							<maxsize>60,25</maxsize>
+							<handler function="OnbtnOkClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="wxID_CANCEL" variable="btnCancel" member="yes">
+							<label>Cancel</label>
+							<maxsize>60,25</maxsize>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON8" variable="ButtonGenReport" member="yes">
+							<label>Generate Report</label>
+							<maxsize>140,25</maxsize>
+							<handler function="OnButtonGenReportClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_LEFT|wxSHAPED</flag>
+				<border>5</border>
+			</object>
+		</object>
+	</object>
+</wxsmith>

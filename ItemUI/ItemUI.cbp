@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ItemUI" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/ItemUI" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/wxWidgets-3.1.1/lib/gcc_lib/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/wxWidgets-3.1.1/lib/gcc_lib/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add directory="C:/wxWidgets-3.1.1/lib/gcc_lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-include wx_pch.h" />
+			<Add option="-DWX_PRECOMP" />
+			<Add option="-Wall" />
+			<Add directory="C:/wxWidgets-3.1.1/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/wxWidgets-3.1.1/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="libkernel32.a" />
+			<Add library="libuser32.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libwinspool.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libadvapi32.a" />
+			<Add library="libshell32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libcomctl32.a" />
+			<Add library="libwsock32.a" />
+			<Add library="libodbc32.a" />
+			<Add library="libshlwapi.a" />
+			<Add library="libversion.a" />
+		</Linker>
+		<Unit filename="AngleSelection.cpp" />
+		<Unit filename="AngleSelection.h" />
+		<Unit filename="InputScreensDlg.cpp" />
+		<Unit filename="InputScreensDlg.h" />
+		<Unit filename="ItemUIApp.cpp" />
+		<Unit filename="ItemUIApp.h" />
+		<Unit filename="ItemUIMain.cpp" />
+		<Unit filename="ItemUIMain.h" />
+		<Unit filename="MaterialSelection.cpp" />
+		<Unit filename="MaterialSelection.h" />
+		<Unit filename="UTSDlg.cpp" />
+		<Unit filename="UTSDlg.h" />
+		<Unit filename="include/CommonUtilities.h" />
+		<Unit filename="include/ItemHeaders.h" />
+		<Unit filename="include/ItemUIData.h" />
+		<Unit filename="include/ItemUIUtils.h" />
+		<Unit filename="include/Tank.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/CommonUtilities.cpp" />
+		<Unit filename="src/ItemHeaders.cpp" />
+		<Unit filename="src/ItemUIData.cpp" />
+		<Unit filename="src/ItemUIUtils.cpp" />
+		<Unit filename="src/Tank.cpp" />
+		<Unit filename="wx_pch.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="wxsmith/AngleSelection.wxs" />
+		<Unit filename="wxsmith/InputScreensDlg.wxs" />
+		<Unit filename="wxsmith/ItemUIdialog.wxs" />
+		<Unit filename="wxsmith/MaterialSelection.wxs" />
+		<Unit filename="wxsmith/UTSDlg.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="ItemUIApp.cpp" main="ItemUIDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/ItemUIdialog.wxs" src="ItemUIMain.cpp" hdr="ItemUIMain.h" fwddecl="0" i18n="1" name="ItemUIDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/AngleSelection.wxs" src="AngleSelection.cpp" hdr="AngleSelection.h" fwddecl="0" i18n="1" name="AngleSelection" language="CPP" />
+					<wxDialog wxs="wxsmith/InputScreensDlg.wxs" src="InputScreensDlg.cpp" hdr="InputScreensDlg.h" fwddecl="0" i18n="1" name="InputScreensDlg" language="CPP" />
+					<wxDialog wxs="wxsmith/MaterialSelection.wxs" src="MaterialSelection.cpp" hdr="MaterialSelection.h" fwddecl="0" i18n="1" name="MaterialSelection" language="CPP" />
+					<wxDialog wxs="wxsmith/UTSDlg.wxs" src="UTSDlg.cpp" hdr="UTSDlg.h" fwddecl="0" i18n="1" name="UTSDlg" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

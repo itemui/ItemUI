@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="MaterialSelection">
+		<title>Material Selection</title>
+		<size>1000,800</size>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizerMain" member="yes">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizerSelection" member="no">
+					<object class="sizeritem">
+						<object class="wxPanel" name="ID_PANEL1" variable="pnlRadioBox" member="yes">
+							<object class="wxBoxSizer" variable="BoxSizerRadioBox" member="no">
+								<object class="sizeritem">
+									<object class="wxRadioBox" name="ID_RADIOBOX1" variable="radioBoxMaterial" member="yes">
+										<label>Material</label>
+										<content>
+											<item>None</item>
+											<item>A283M-Gr.C(2)</item>
+											<item>A 285M-Gr.C(2)</item>
+											<item>A 131M-Gr.A(2)</item>
+											<item>A 131M-Gr. B(6)</item>
+											<item>A 131M-Gr.EH 36</item>
+											<item>A36M(2,5)</item>
+											<item>A 573M-Gr. 400</item>
+											<item>A 573M-Gr. 400(9)</item>
+											<item>A 573M-GR. 450</item>
+											<item>A 573M-GR. 485</item>
+											<item>A 573M-GR. 485(10)</item>
+											<item>A 573M-GR. 485(9)</item>
+											<item>A 516M-Gr. 380</item>
+											<item>A 516M-Gr. 380(9)</item>
+											<item>A 516M-Gr. 415</item>
+											<item>A 516M-Gr. 415(9)</item>
+											<item>A 516M -Gr. 450</item>
+											<item>A 516M -Gr. 450(9)</item>
+											<item>A 516M -Gr. 485</item>
+											<item>A 516M -Gr. 485(9)</item>
+											<item>A 662M-GR.B</item>
+											<item>A 662M-GR.C</item>
+											<item>A 537M CL-1</item>
+											<item>A 537M CL-2(12)</item>
+											<item>A 633M-GR. C</item>
+											<item>A 633M-GR. D</item>
+											<item>A 678M-Gr.A</item>
+											<item>A 678M-Gr.B(12)</item>
+											<item>A 737M-Gr. B</item>
+											<item>A 841M GR.A CL.1(11,12,13)</item>
+											<item>A 841M GR.B.CL.2(11,12,13)</item>
+											<item>CSA G 40.21M Gr.260W</item>
+											<item>CSA G 40.21M Gr.260W(8)</item>
+											<item>CSA G 40.21M Gr.260WT(8,9)</item>
+											<item>CSA G 40.21M Gr.300W(8)</item>
+											<item>CSA G 40.21M Gr.300W(8,10)</item>
+											<item>CSA G 40.21M Gr.300WT(8, 9)</item>
+											<item>CSA G 40.21M Gr.350W(8)</item>
+											<item>CSA G 40.21M Gr.350W(8,10)</item>
+											<item>CSA G 40.21M Gr.350WT(8,9)</item>
+											<item>National Standard Gr. 235(3)</item>
+											<item>National Standard Gr. 250(5)</item>
+											<item>National Standard Gr. 250(7)</item>
+											<item>National Standard Gr. 250(8)</item>
+											<item>National Standard Gr. 250(8,9)</item>
+											<item>National Standard Gr. 275(8)</item>
+											<item>ISO 630 E 275C  (t &lt; = 16)(8)</item>
+											<item>ISO 630 E 275C  (t &gt; 16)(8)</item>
+											<item>ISO 630 E 275D  (t &lt; = 16)(8)</item>
+											<item>ISO 630 E 275D  (t &gt; 16)(8)</item>
+											<item>ISO 630 E 355C  (t &lt;=16)(8)</item>
+											<item>ISO 630 E 355C  (16&lt; t &lt;=40)(8)</item>
+											<item>ISO 630 E 355C  (t &gt; 40)(8)</item>
+											<item>ISO 630 E 355D  (t &lt;=16)(8)</item>
+											<item>ISO 630 E 355D  (16&lt; t &lt;=40)(8)</item>
+											<item>ISO 630 E 355D  (t &gt; 40)(8)</item>
+											<item>EN 10025 S275 J0 (T &lt; = 16)(8)</item>
+											<item>EN 10025 S275 J0 (T &gt; 16)(8)</item>
+											<item>EN 10025 S275 J2 (T &lt; = 16)(8)</item>
+											<item>EN 10025 S275 J2 (t &gt; 16)(8)</item>
+											<item>EN 10025 S355 J0 (T &lt; = 16)(8)</item>
+											<item>EN 10025 S355 J0 (16 &lt;= T &lt; 40) (8)</item>
+											<item>EN 10025 S355 J0 (T &gt; 40) (8)</item>
+											<item>EN 10025 S355 J2, k2 (t &lt;= 16) (8)</item>
+											<item>EN 10025 S355 J2, k2 (16 &lt; t &lt;= 40)(8)</item>
+											<item>EN 10025 S355 J2, k2 (t &gt; 40) (8)</item>
+											<item>A 131M-Gr.EH 36__(High UTS)</item>
+											<item>A 573M-GR. 485_(High UTS)</item>
+											<item>A 662M-GR.C_(High UTS)</item>
+											<item>A 537M CL-1 _(High UTS)</item>
+											<item>A 537M CL-2 _(High UTS)(12)</item>
+											<item>A 633M-GR. C,D) _(High UTS)</item>
+											<item>A 678M-GR.A)_(High UTS)</item>
+											<item>A 678M-GR.B) _(High UTS)(12)</item>
+											<item>A 737M-GR. B) GROUP (VI)_(High UTS)</item>
+											<item>A 841M GR.A CL.1_(High UTS) (11,12,13)</item>
+											<item>A 841M GR.B.CL.2_(High UTS) (11,12,13)</item>
+											<item>CSA G 40.21M Gr.350W _(High UTS)(8,9)</item>
+											<item>ISO 630 E 355C  (t &gt; 40)_(High UTS) (8)</item>
+											<item>ISO 630 E 355D  (t &gt; 40) _(High UTS)(8)</item>
+											<item>EN 10025 S355 J0 (T &gt; 40) _(High UTS)(8)</item>
+											<item>EN 10025 S355 J2, k2 (t &gt; 40) _(High UTS)(8)</item>
+											<item>A 240 (Type 201-1)</item>
+											<item>A 240 (Type 201LN)</item>
+											<item>A 240 TYPE 304</item>
+											<item>A 240 TYPE 304L</item>
+											<item>A 240 TYPE 316</item>
+											<item>A 240 TYPE 316L</item>
+											<item>SA 240 TYPE 317</item>
+											<item>SA 240 TYPE 317L</item>
+											<item>SA 240 S31803</item>
+											<item>SA 240 S32003</item>
+											<item>SA 240 S32101</item>
+											<item>SA 240 S32202</item>
+											<item>SA 240 S32205</item>
+											<item>SA 240 S32304</item>
+											<item>SA 240 S32520</item>
+											<item>SA 240 S32750</item>
+											<item>SA 240 S32760</item>
+										</content>
+										<default>-1</default>
+										<dimension>4</dimension>
+										<handler function="OnradioBoxMaterialSelect" entry="EVT_RADIOBOX" />
+									</object>
+									<flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizerDlgBtns" member="yes">
+					<object class="sizeritem">
+						<object class="wxButton" name="wxID_OK" variable="btnOk" member="yes">
+							<label>Ok</label>
+							<handler function="OnbtnOkClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="wxID_CANCEL" variable="btnCancel" member="yes">
+							<label>Cancel</label>
+							<handler function="OnbtnCancelClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALIGN_CENTER_HORIZONTAL</flag>
+			</object>
+		</object>
+	</object>
+</wxsmith>

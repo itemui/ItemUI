@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="AngleSelection">
+		<title>Angle Selection</title>
+		<size>464,535</size>
+		<id_arg>0</id_arg>
+		<object class="wxRadioBox" name="ID_RADIOBOX1" variable="radioBoxAngle" member="yes">
+			<label>Angle</label>
+			<content>
+				<item>200x200x24</item>
+				<item>200x200x20</item>
+				<item>200x200x18</item>
+				<item>180x180x18</item>
+				<item>200x200x16</item>
+				<item>200x150x18</item>
+				<item>180x180x16</item>
+				<item>150x150x18</item>
+				<item>200x150x15</item>
+				<item>160x160x15</item>
+				<item>150x150x15</item>
+				<item>200x100x15</item>
+				<item>200x150x12</item>
+				<item>200x100x12</item>
+				<item>150x150x12</item>
+				<item>150x90x15</item>
+				<item>120x120x15</item>
+				<item>150x75x15</item>
+				<item>130x130x12</item>
+				<item>150x150x10</item>
+				<item>200x100x10</item>
+				<item>150x100x12</item>
+				<item>120x120x12</item>
+				<item>150x100x10</item>
+				<item>100x100x15</item>
+				<item>150x90x12</item>
+				<item>150x75x12</item>
+				<item>150x90x10</item>
+				<item>120x120x10</item>
+				<item>150x75x10</item>
+				<item>100x75x12</item>
+				<item>150x75x9</item>
+				<item>125x75x10</item>
+				<item>135x65x10</item>
+				<item>120x120x8</item>
+				<item>90x90x10</item>
+				<item>135x65x8</item>
+				<item>100x100x8</item>
+				<item>90x90x9</item>
+				<item>125x75x12</item>
+				<item>100x100x12</item>
+				<item>90x90x12</item>
+				<item>100x100x10</item>
+				<item>100x65x10</item>
+				<item>125x75x8</item>
+				<item>120x80x12</item>
+				<item>120x80x10</item>
+				<item>100x75x10</item>
+				<item>120x80x8</item>
+				<item>90x90x8</item>
+				<item>100x75x8</item>
+				<item>80x80x10</item>
+				<item>70x70x10</item>
+				<item>100x65x8</item>
+				<item>80x80x8</item>
+				<item>90x90x7</item>
+				<item>100x50x8</item>
+				<item>75x75x8</item>
+				<item>100x65x7</item>
+				<item>100x50x6</item>
+				<item>80x60x8</item>
+				<item>90x90x6</item>
+				<item>70x70x8</item>
+				<item>75x50x8</item>
+				<item>70x70x7</item>
+				<item>80x60x7</item>
+				<item>80x80x6</item>
+				<item>80x40x8</item>
+				<item>75x75x6</item>
+				<item>70x70x6</item>
+				<item>80x60x6</item>
+				<item>65x65x7</item>
+				<item>65x65x6</item>
+				<item>1</item>
+				<item>2</item>
+			</content>
+			<default>-1</default>
+			<dimension>5</dimension>
+			<pos>16,88</pos>
+			<size>440,360</size>
+			<handler function="OnradioBoxAngleSelect" entry="EVT_RADIOBOX" />
+		</object>
+		<object class="wxButton" name="ID_BUTTONangleOK" variable="angleOKButton" member="yes">
+			<label>OK</label>
+			<pos>104,464</pos>
+			<size>104,23</size>
+			<handler function="OnangleOKButtonClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTONangleCancel" variable="angleCancelButton" member="yes">
+			<label>Cancel</label>
+			<pos>248,464</pos>
+			<size>104,23</size>
+			<handler function="OnangleCancelButtonClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Angle Selection Designation</label>
+			<pos>104,16</pos>
+			<size>133,24</size>
+			<font>
+				<size>14</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>@Adobe Gothic Std B</face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>a x b x c</label>
+			<pos>192,40</pos>
+			<font>
+				<size>11</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>@Adobe Gothic Std B</face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>mm</label>
+			<pos>208,56</pos>
+			<font>
+				<size>9</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>@Adobe Gothic Std B</face>
+			</font>
+		</object>
+	</object>
+</wxsmith>
